@@ -26,3 +26,23 @@ class Combo1(ComboFactory):
 
     def create_burger(self) -> BurgerBuilder:
         return HawaiianBurger()
+
+    def get_total():
+        total = 0
+        total = total +CocaCola.get_price()
+        total = total + FrenchFries.get_price()
+        total = total +IceCream.get_price()
+        total = total +HawaiianBurger.get_price()
+        print(total)
+        print("hola")
+        return total
+    
+    def get_time():
+        time = 0
+        time = time +CocaCola.get_time()
+        time = time + FrenchFries.get_time()
+        time = time +IceCream.get_time()
+        time = time +HawaiianBurger.get_time()
+        print(time)
+        return time
+        

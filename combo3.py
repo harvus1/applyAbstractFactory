@@ -21,3 +21,22 @@ class Combo3(ComboFactory):
 
     def create_burger(self) -> BurgerBuilder:
         return FishBurger()
+
+    def get_total():
+        total = 0
+        total = total +CheeseCake.get_price()
+        total = total + CheesePops.get_price()
+        total = total +NectarJuice.get_price()
+        total = total +FishBurger.get_price()
+        print(total)
+        print("hola")
+        return total
+    
+    def get_time():
+        time = 0
+        time = time +CheeseCake.get_time()
+        time = time + CheesePops.get_time()
+        time = time +NectarJuice.get_time()
+        time = time +FishBurger.get_time()
+        print(time)
+        return time
